@@ -1,0 +1,192 @@
+@Metadata.layer: #PARTNER
+@UI.headerInfo : {
+typeName: 'GSTR1 Report',
+typeNamePlural: 'GSTR1 Report'
+}
+annotate entity ZFI_GSTR1_REPORT1
+    with 
+{
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  @EndUserText.label: 'Invoice No.'
+  AccountingDocument;
+  @UI.lineItem: [{ position: 12 }]
+  @UI.identification: [{ position: 12 }]
+  @UI.selectionField: [{ position: 12 }]
+  @EndUserText.label: 'Billing Document'
+  BillingDocument;
+    @UI.lineItem: [{ position: 15 }]
+  @UI.identification: [{ position: 15 }]
+  @EndUserText.label: 'Om Infra Invoice No'
+  InvoiceNo;
+    @UI.lineItem: [{ position: 15 }]
+  @UI.identification: [{ position: 15 }]
+  @EndUserText.label: 'Product'
+  Product;
+    @UI.lineItem: [{ position: 17 }]
+  @UI.identification: [{ position: 17 }]
+  @EndUserText.label: 'Product Des'
+  ProductDescription;
+  @UI.lineItem: [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  @EndUserText.label: 'Company Code'
+  CompanyCode;
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  @EndUserText.label: 'Fiscal Year'
+  FiscalYear;
+  @UI.lineItem: [{ position: 33 }]
+  @UI.identification: [{ position: 33 }]
+  @EndUserText.label: 'Document  status'
+  doc_status;
+  @UI.lineItem: [{ position: 35}]
+  @UI.identification: [{ position: 35 }]
+  @EndUserText.label: 'Original tax Invoice'
+  org_tax;
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  @EndUserText.label: 'Accounting Document Type'
+  AccountingDocumentType;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  @EndUserText.label: 'Document Type Desc.'
+  AccountingDocumentTypeName;
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  @EndUserText.label: 'Document Date'
+  DocumentDate;
+  @UI.lineItem: [{ position: 70 }]
+  @UI.selectionField: [{ position: 70 }]
+  @UI.identification: [{ position: 70 }]
+  @EndUserText.label: 'Posting Date'
+  PostingDate;
+  @UI.lineItem: [{ position: 71 }]
+  @UI.identification: [{ position: 71 }]
+  @EndUserText.label: 'Document Is Reversed'
+  DocumentIsRevered;
+  @UI.lineItem: [{ position: 80 }]
+  @UI.identification: [{ position: 80 }]
+  @EndUserText.label: 'GL Account'
+  OffsettingAccount;
+  @UI.lineItem: [{ position: 90 }]
+  @UI.identification: [{ position: 90 }]
+  @EndUserText.label: 'GL Description'
+  GLAccountLongName;
+  @UI.lineItem: [{ position: 100 }]
+  @UI.selectionField: [{ position: 100 }]
+  @UI.identification: [{ position: 100 }]
+  @EndUserText.label: 'Customer'
+  Customer;
+  @UI.lineItem: [{ position: 101 }]
+  @UI.identification: [{ position: 101 }]
+  @EndUserText.label: 'Customer Name'
+  customer_name;
+  @UI.lineItem: [{ position: 115 }]
+  @UI.identification: [{ position: 115 }]
+  @EndUserText.label: 'Customer Group'
+  cust_grp;
+  @UI.lineItem: [{ position: 110 }]
+  @UI.identification: [{ position: 110 }]
+  @EndUserText.label: 'Customer GSTIN'
+  customer_gstin;
+  @UI.lineItem: [{ position: 120 }]
+  @UI.selectionField: [{ position: 120 }]
+  @UI.identification: [{ position: 120 }]
+  @EndUserText.label: 'Business Place'
+  BusinessPlace;
+  @UI.lineItem: [{ position: 130 }]
+  @UI.identification: [{ position: 130 }]
+  @EndUserText.label: 'Business Place Description'
+  BusinessPlaceDescription;
+  @UI.lineItem: [{ position: 140 }]
+  @UI.identification: [{ position: 140 }]
+  @EndUserText.label: 'Business Place GSTIN'
+  IN_GSTIdentificationNumber;
+  @UI.lineItem: [{ position: 150 }]
+  @UI.identification: [{ position: 150 }]
+  @EndUserText.label: 'Place of supply'
+  Region;
+  @UI.lineItem: [{ position: 160 }]
+  @UI.identification: [{ position: 160 }]
+  @EndUserText.label: 'Supply Attract Reverse Charge'
+  supply_attract_rev;
+  @UI.lineItem: [{ position: 170 }]
+  @UI.identification: [{ position: 170 }]
+  @EndUserText.label: 'Tax Code'
+  TaxCode;
+  @UI.lineItem: [{ position: 180 }]
+  @UI.identification: [{ position: 180 }]
+  @EndUserText.label: 'Tax Code Description'
+  TaxCodeName;
+  @UI.lineItem: [{ position: 190 }]
+  @UI.identification: [{ position: 190 }]
+  @EndUserText.label: 'Taxable Value In INR'
+  taxable_value;
+  @UI.lineItem: [{ position: 200 }]
+  @UI.identification: [{ position: 200 }]
+  @EndUserText.label: 'IGST Rate'
+  igst_rate;
+  @UI.lineItem: [{ position: 210 }]
+  @UI.identification: [{ position: 210 }]
+  @EndUserText.label: 'CGST Rate'
+  cgst_rate;
+  @UI.lineItem: [{ position: 220 }]
+  @UI.identification: [{ position: 220 }]
+  @EndUserText.label: 'SGST Rate'
+  sgst_rate;
+//  @UI.lineItem: [{ position: 230 }]
+//  @UI.identification: [{ position: 230 }]
+//  @EndUserText.label: 'UGST Rate'
+//  ugst_rate;
+  @UI.lineItem: [{ position: 240 }]
+  @UI.identification: [{ position: 240 }]
+  @EndUserText.label: 'IGST Amount'
+  igst_amount;
+  @UI.lineItem: [{ position: 250 }]
+  @UI.identification: [{ position: 250 }]
+  @EndUserText.label: 'CGST Amount'
+  cgst_amount;
+  @UI.lineItem: [{ position: 260 }]
+  @UI.identification: [{ position: 260 }]
+  @EndUserText.label: 'SGST Amount'
+  sgst_amount;
+//  @UI.lineItem: [{ position: 270 }]
+//  @UI.identification: [{ position: 270 }]
+//  @EndUserText.label: 'UGST Amount'
+//  ugst_amount;
+  @UI.lineItem: [{ position: 280 }]
+  @UI.identification: [{ position: 280 }]
+  @EndUserText.label: 'Invoice Value'
+  invoice_value;
+  @UI.lineItem: [{ position: 290 }]
+  @UI.identification: [{ position: 290 }]
+  @EndUserText.label: 'HSN Code'
+  hsn_code;
+  @UI.lineItem: [{ position: 112 }]
+  @UI.identification: [{ position: 112 }]
+  @EndUserText.label: 'HSN Nature'
+   HSNNature;
+  @UI.lineItem: [{ position: 300 }]
+  @UI.identification: [{ position: 300 }]
+  @EndUserText.label: 'Profit Center'
+  ProfitCenter;
+  @UI.lineItem: [{ position: 310 }]
+  @UI.identification: [{ position: 310 }]
+  @EndUserText.label: 'Profit Center Name'
+  ProfitCenterLongName;
+  @UI.lineItem: [{ position: 320 }]
+  @UI.identification: [{ position: 320 }]
+  @EndUserText.label: 'GSTIN Status'
+  gstin_status;
+//  @UI.lineItem: [{ position: 330 }]
+//  @UI.identification: [{ position: 330 }]
+//  @EndUserText.label: 'Quantity'
+//  quantity;
+//  @UI.lineItem: [{ position: 340 }]
+//  @UI.identification: [{ position: 340 }]
+//  @EndUserText.label: 'Unit Of Measurement'
+//  uom;
+  
+}

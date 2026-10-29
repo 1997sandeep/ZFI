@@ -1,0 +1,9 @@
+CLASS zbp_fi_ilc_boe_cds DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zfi_ilc_boe_cds.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_FI_ILC_BOE_CDS IMPLEMENTATION.
+ENDCLASS.

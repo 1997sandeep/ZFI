@@ -1,0 +1,32 @@
+unmanaged implementation in class zbp_fi_olc_boe_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_OLC_BOE_CDS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Zlcnumber, Zboeno;
+
+  mapping for zfi_olc_boe
+  {
+    Zlcnumber      = zlcnumber;
+    Zboeno         = zboeno;
+    Zboedate       = zboedate;
+    Zboetype       = zboetype;
+    Zbillingdoc    = zbillingdoc;
+    Zinvoiceamt    = zinvoiceamt;
+    Zboeamount     = zboeamount;
+    Zcurrency      = zcurrency;
+    ZapplicableDate = zapplicabledate;
+    ZboeDueDate    = zboeduedate;
+    ZboeStatus     = zboestatus;
+    Zremarks       = zremarks;
+    ZpaymentStatus = zpaymentstatus;
+    Zdescrepancies = zdescrepancies;
+  }
+}

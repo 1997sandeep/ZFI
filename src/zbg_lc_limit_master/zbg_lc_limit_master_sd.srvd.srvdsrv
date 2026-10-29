@@ -1,0 +1,10 @@
+@EndUserText.label: 'Service defination For BG/LC Limit Master'
+define service ZBG_LC_LIMIT_MASTER_SD {
+  expose ZI_BG_LC_LIMIT_cds;
+  expose ZLCBG_EDIT         as edit_data;
+  expose ZBGLC_DATA         as bankdata;
+  expose ZBGLC_DISPLAY      as display_dat;
+  expose ZCOMPANYCODE_F4    as companycode_f4;
+  expose zHouseBank_f4      as HouseBank_f4;
+  expose zHouseBank_id_f4   as accountid_f4;
+}

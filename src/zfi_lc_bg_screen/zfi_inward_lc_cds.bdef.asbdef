@@ -1,0 +1,77 @@
+unmanaged implementation in class zbp_fi_inward_lc_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_INWARD_LC_CDS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly : update ) CompanyCode, LcNumber;
+  mapping for zfi_inward_lc
+  {
+    CompanyCode        = company_code;
+    LcNumber           = lc_number;
+    LcBankNumber       = lc_banknumber;
+    LcType             = lc_type;
+    VendorCode         = vendor_code;
+    VendorName         = vendor_name;
+    IssuingBank        = issuing_bank;
+    LcCurrency         = lc_currency;
+    LcAmount           = lc_amount;
+    AmountVersion      = amount_version;
+    TolerancePercent   = tolerance_percent;
+    ToleranceAmount    = tolerance_amount;
+    TotalLcAmount      = total_lc_amount;
+    LcDate             = lc_date;
+    LastShipmentDate   = last_shipment_date;
+    LsdVersion         = lsd_version;
+    ExpiryDate         = expiry_date;
+    EdVersion          = ed_version;
+    LcPercent          = lc_percent;
+    PurchaseOrder      = purchase_order;
+    PoDate             = po_date;
+    BasicPoAmount      = basic_po_amount;
+    GstAmount          = gst_amount;
+    TotalPoAmount      = total_po_amount;
+    TdsAmount          = tds_amount;
+    BoeDuePeriod       = boe_due_period;
+    ExecutionStatus    = execution_status;
+    IssuanceStatus     = issuance_status;
+    ShortClosedAmount  = short_closed_amount;
+    Remarks            = remarks;
+    Descrepancies      = descrepancies;
+    Commamount = commamount;
+    Commbasis = commbasis;
+    Commrate = commrate;
+    Lctenure = lctenure;
+    Lcmargin = lcmargin;
+    Lcmarginamt = lcmarginamt;
+    Zbankaddr = zbankaddr;
+    Zbankaddr1 = zbankaddr1;
+    Zbankname = zbankname;
+    Zbankname1 = zbankname1;
+    Zbankifsc = zbankifsc;
+    Zotherrate = zotherrate;
+    Zotheramount = zotheramount;
+     dms  = zdms;
+      FileNo             = zfile;
+      MimeType           = zmimetype;
+      FileName           = zfilename;
+    Createdon                 = createdon;
+    Createdat                 = createdat;
+    Createdby                 = createdby;
+    Changedon                 = changedon;
+    Changedat                 = changedat;
+    Changedby                 = changedby;
+    Lastchanged               = lastchanged;
+//    Descrepancies      = descrepancies;
+//    CreatedBy          = created_by;
+//    CreatedAt          = created_at;
+//    LastChangedBy      = last_changed_by;
+//    LastChangedAt      = last_changed_at;
+  }
+}

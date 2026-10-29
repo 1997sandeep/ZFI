@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition - BG And Lc Report'
+define service ZBGLC_SD {
+  expose ZBG_LC_REPORT;
+}

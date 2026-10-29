@@ -1,0 +1,48 @@
+unmanaged implementation in class zbp_fi_ilc_boe_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_ILC_BOE_CDS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) BoeRefNumber;
+  mapping for zfi_ilc_boe
+  {
+    BoeRefNumber   = boe_ref_number;
+    BoeType        = boe_type;
+    LcNumber       = lc_number;
+
+    DraweeName     = drawee_name;
+    DrawerName     = drawer_name;
+
+    DraweeDesc     = drawee_desc;
+    DrawerDesc     = drawer_desc;
+
+    BookingDate    = booking_date;
+    ApplicableDate = applicable_date;
+    MaturityDate   = maturity_date;
+    BoeAmount      = boe_amount;
+    Currency       = currency;
+    OrderNumber    = order_number;
+
+    Descrepencies  = descrepencies;
+
+    Createdon                 = createdon;
+    Createdat                 = createdat;
+    Createdby                 = createdby;
+    Changedon                 = changedon;
+    Changedat                 = changedat;
+    Changedby                 = changedby;
+    Lastchanged               = lastchanged;
+
+//    CreatedBy      = created_by;
+//    CreatedAt      = created_at;
+//    LastChangedBy  = last_changed_by;
+//    LastChangedAt  = last_changed_at;
+  }
+}

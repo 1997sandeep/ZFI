@@ -1,0 +1,15 @@
+@EndUserText.label: 'Service Definition - AR BG Monitoring Report'
+define service ZFI_AR_BG_REPORT_SD {
+  expose ZFI_AR_BG_REPORT    as CustomerReport;
+  expose ZFI_VEND_BG_REPORT  as VendorReport;
+  expose ZFI_COMPANY_CODE_F4;
+  expose ZFI_CUSTOMER_F4;
+  expose ZFI_PROJECT_F4;
+  expose ZFI_VENDOR_F4;
+  expose ZFI_VEND_BG_BGNO_F4;
+  expose ZFI_AR_BG_VH_DOC    as BGNOF4;
+  expose zsupplier_f4        as supplier_f4;
+  expose ZSALESORDER_F4      as Contract_SO;
+  expose ZCUSTOMER_F4        as customer_f4;
+  expose ZPROFIT_CENTER      as profitcenter;
+}

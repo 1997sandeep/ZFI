@@ -1,0 +1,30 @@
+unmanaged implementation in class zbp_fi_lc_req_doc_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_LC_REQ_DOC_CDS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) CompanyCode, LcNumber, SlNumber;
+  mapping for zfi_lc_req_doc
+  {
+    CompanyCode         = company_code;
+    LcNumber            = lc_number;
+    SlNumber             = sl_number;
+
+    DocumentDescription = document_description;
+
+    Createdon                 = createdon;
+    Createdat                 = createdat;
+    Createdby                 = createdby;
+    Changedon                 = changedon;
+    Changedat                 = changedat;
+    Changedby                 = changedby;
+    Lastchanged               = lastchanged;
+  }
+}

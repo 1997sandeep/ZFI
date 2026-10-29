@@ -1,0 +1,19 @@
+@EndUserText.label: 'Service Definition - Vendor BG Monitoring Screen'
+define service ZFI_VENDOR_BG_SD {
+  expose ZFI_VENDOR_BG_CDS;
+  expose ZFI_VEND_BG_PROJECT_F4;
+  expose ZFI_VEND_BG_PROFIT_CENTER_F4;
+  expose ZFI_VEND_BG_PO_F4;
+  expose ZFI_VEND_BG_BGNO_F4;
+  expose ZFI_VEND_BG_BANK_F4;
+  expose ZFI_CUSTOMER_BG_CDS;
+  expose ZFI_CUST_BG_BANK_F4;
+  expose ZFI_CUSTOMER_BG_F4;
+  expose ZFI_BG_F4;
+  expose ZFI_CUST_PROJECTID_F4;
+  expose ZSALESORDER_F4               as contact_so;
+  expose zsupplier_f4                 as supplier_f4;
+  expose ZCUSTOMER_F4                 as customer_f4;
+  expose ZPROFIT_CENTER               as profitcenter;
+  expose ZSALES_DETAIL                as customeraddress;
+}

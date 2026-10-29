@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "GSTR2 Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zgstr2"
+  },
+  "navigation": {
+    "targetMappingId": "ZGSTR2_UI5R_TM",
+    "semanticObject": "zgstr2",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "ZGSTR2_UI5R_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "GSTR2 Report",
+        "subtitle": "Purchase Register"
+      }
+    }
+  ]
+}

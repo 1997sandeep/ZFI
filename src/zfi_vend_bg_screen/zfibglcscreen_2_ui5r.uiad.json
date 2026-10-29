@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "BGMS Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "BG Monitoring Screen"
+  },
+  "ui5AppDetails": {
+    "appId": "bgms.com.bgms"
+  },
+  "navigation": {
+    "targetMappingId": "ZFIBGLCSCREEN_2_UI5R_TM",
+    "semanticObject": "ZBGMS",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "ZFIBGLCSCREEN_2_UI5R_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "BG Monitoring Screen"
+      }
+    }
+  ]
+}

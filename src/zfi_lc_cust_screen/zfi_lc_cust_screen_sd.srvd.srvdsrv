@@ -1,0 +1,13 @@
+@EndUserText.label: 'Service Definition - LC Customer Monitoring Screen'
+define service ZFI_LC_CUST_SCREEN_SD {
+  expose ZFI_OUTWARD_LC_CDS      as CustomerLC;
+  expose ZFI_OUTWARD_RD_CDS      as ReqDoc;
+  expose ZFI_OLC_BOE_CDS         as BOE;
+  expose ZFI_OUTWARD_COMP_F4     as CompanyCodeF4;
+  expose ZFI_OUTWARD_CUSTOMER_F4 as CustomerF4;
+  expose ZFI_OUTWARD_PROJECT_F4  as ProjectF4;
+  expose ZFI_OUTWARD_BANK        as BankData;
+  expose ZFI_OUTWARD_SO_F4       as SalesOrder;
+  expose ZFI_OUTWARD_BILLING_DOC as BillingDoc;
+  expose ZFI_LC_PO_F4            as POF4;
+}

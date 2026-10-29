@@ -1,0 +1,10 @@
+@EndUserText.label: 'Service Definition - LC Customer Monitoring Report'
+define service ZFI_LC_CUST_REP_SD {
+  expose ZFI_OUTWARD_LC_JOBDETAIL as JobDetails;
+  expose ZFI_OUTWARD_LC_BOEDETAIL as BoeDetails;
+  expose ZFI_OUTWARD_LC_REPORT    as LCReport;
+  expose ZLC_CUST_LCNO_F4         as LCNOF4;
+  expose ZLC_CUST_PROJECT_F4      as ProjectF4;
+  expose ZLC_CUST_CUSTOMER_F4     as CustomerF4;
+  expose ZLC_CUST_COMPCODE_F4     as CompanyCodeF4;
+}

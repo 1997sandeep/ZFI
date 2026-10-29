@@ -1,0 +1,75 @@
+unmanaged implementation in class zbp_fi_customer_bg_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_CUSTOMER_BG_CDS
+  lock master
+  authorization master ( instance )
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  field ( readonly ) Zslno;
+
+  mapping for zfi_customer_bg
+  {
+    Zslno             = zslno;
+    Zprofitcenter             = zprofitcenter;
+    Zconcernperson    = zconcernperson;
+    Zjobnumber        = zjobnumber;
+    Zbeneficiarycode  = zbeneficiarycode;
+    Zbeneficiaryname  = zbeneficiaryname;
+    Zbgnumber         = zbgnumber;
+    Zbgpurpose        = zbgpurpose;
+    Zbgtype           = zbgtype;
+    Zbgamount         = zbgamount;
+     zcreatedon        = Zcreatedon;
+    Zbgissuancedate   = zbgissuancedate;
+    Zbgexpirydate     = zbgexpirydate;
+    Zbgclaimdate      = zbgclaimdate;
+    Zbgextupto        = zbgextupto;
+    Bgclaimperiod     = bgclaimperiod;
+    Zbgdaysextended   = zbgdaysextended;
+    Zbgoverdue        = zbgoverdue;
+    Zbgtennure        = zbgtennure;
+    Zbgmargin         = zbgmargin;
+    Zbgmarginamt      = zbgmarginamt;
+    Zcommrate = zcommrate;
+    Zcommbasis = zcommbasis;
+    Zcommamount = zcommamount;
+    Znitdate = znitdate;
+    Znitno = znitno;
+    Zbgissuanceamt    = zbgissuanceamt;
+    Zbgsfmsbgamt      = zbgsfmsbgamt;
+    Zbgstampamt       = zbgstampamt;
+    Zbggstamt         = zbggstamt;
+    Zbgtotalchg       = zbgtotalchg;
+    Zbgstatus         = zbgstatus;
+    Zbgremarks        = zbgremarks;
+    Zcontractno = zcontractno;
+    Zcustomername = zcustomername;
+    Zbgextensionversion       = zbgextensionversion;
+    Zbgclaimextensionversion  = zbgclaimextensionversion;
+    Zbankaddr = zbankaddr;
+    Zbankifsc = zbankifsc;
+    Zbankname = zbankname;
+    Zcustomerbankaddr  = zcustomerbankaddr;
+    Zcustomerbankifsc = zcustomerbankifsc;
+    Zcustomerbankname = zcustomerbankname;
+    Zotheramount = zotheramount;
+    Zotherrate = zotherrate;
+     dms  = zdms;
+      FileNo             = zfile;
+      MimeType           = zmimetype;
+      FileName           = zfilename;
+    Flagcu                    = flagcu;
+    Flag                      = flag;
+    Createdon                 = createdon;
+    Createdat                 = createdat;
+    Createdby                 = createdby;
+    Changedon                 = changedon;
+    Changedat                 = changedat;
+    Changedby                 = changedby;
+    Lastchanged               = lastchanged;
+  }
+}

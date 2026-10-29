@@ -1,0 +1,71 @@
+unmanaged implementation in class zbp_fi_vendor_bg_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_VENDOR_BG_CDS
+  lock master
+  authorization master ( instance )
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  field ( readonly ) Zdocumentnumber;
+
+  mapping for zfi_vendor_bg
+  {
+    Zdocumentnumber           = zdocumentnumber;
+    Zprofitcenter             = zprofitcenter;
+    Zbgtransactiontype        = zbgtransactiontype;
+    Zbgnumber                 = zbgnumber;
+    Zbgdate                   = zbgdate;
+    Zbgexpirydate             = zbgexpirydate;
+    Zprojectid                = zprojectid;
+    Zcreatedon                = zcreatedon;
+    Zbgamount                 = zbgamount;
+    Zcurrency                 = zcurrency;
+    Zbgissuedate              = zbgissuedate;
+    Zbgtype                   = zbgtype;
+    Zbgpurpose                = zbgpurpose;
+    Zclaimenddate             = zclaimenddate;
+    Zbgextensiondate          = zbgextensiondate;
+    Zbgextensionversion       = zbgextensionversion;
+    Zbillingamount            = zbillingamount;
+    Zpurchaseorder            = zpurchaseorder;
+    Zbankifsc                 = zbankifsc;
+    Zbankname                 = zbankname;
+    Zbankaddr                 = zbankaddr;
+    Zdocumentstatus           = zdocumentstatus;
+    Zdaysexpire               = zdaysexpire;
+    Zvendor                   = zvendor;
+    Zvendorname               = zvendorname;
+    Zvendoraddr               = zvendoraddr;
+    Zbdemdconfirmbank         = zbdemdconfirmbank;
+    Zbdemdconfirmdate         = zbdemdconfirmdate;
+    Zpaymentreceiveddate      = zpaymentreceiveddate;
+    Zbgdischargeddate         = zbgdischargeddate;
+    Zbgtenure                 = zbgtenure;
+    Zbgclaimextensiondate     = zbgclaimextensiondate;
+    Zbgclaimextensionversion  = zbgclaimextensionversion;
+    Flagcu                    = flagcu;
+    Flag                      = flag;
+    Zcommamount = zcommamount;
+    Zcommbasis = zcommbasis;
+    Zcommrate = zcommrate;
+    Zremark = zremark;
+    Zbgmargin = zbgmargin;
+    Zbgmarginamt = zbgmarginamt;
+      Zotheramount = zotheramount;
+    Zotherrate = zotherrate;
+       dms  = zdms;
+      FileNo             = zfile;
+      MimeType           = zmimetype;
+      FileName           = zfilename;
+    Createdon                 = createdon;
+    Createdat                 = createdat;
+    Createdby                 = createdby;
+    Changedon                 = changedon;
+    Changedat                 = changedat;
+    Changedby                 = changedby;
+    Lastchanged               = lastchanged;
+  }
+}

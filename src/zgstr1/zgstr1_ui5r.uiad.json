@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "GSTR1 Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zgstr1"
+  },
+  "navigation": {
+    "targetMappingId": "ZGSTR1_UI5R_TM",
+    "semanticObject": "zgstr1",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "ZGSTR1_UI5R_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "GSTR1 Report",
+        "subtitle": "Sales Register"
+      }
+    }
+  ]
+}

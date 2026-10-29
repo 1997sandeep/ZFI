@@ -1,0 +1,32 @@
+unmanaged implementation in class zbp_i_bg_lc_limit_cds unique;
+strict ( 1 );
+
+define behavior for ZI_BG_LC_LIMIT_cds //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Companycode, Housebank, Accountid;
+  mapping for zbg_lc_li_mas_t
+  { Accountid = accountid ;
+    Companycode = companycode;
+    Housebank = housebank;
+    Bankname = bankname;
+    CurrencyKey = currency_key ;
+    BgLimit = bg_limit;
+    LcLimit = lc_limit;
+    EffectiveFrom = effective_from;
+    EffectiveTo = effective_to;
+    Remarks = remarks;
+    Createdby = createdby;
+    Createdon = createdon;
+    Changedby = changedby;
+    Changedon = changedon;
+
+
+  }
+}

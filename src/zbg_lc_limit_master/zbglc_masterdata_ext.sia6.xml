@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZBGLC_MASTERDATA_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>App foR BG/LC Master Data</DESCRIPTION>
+     <RESPONSIBLE>CB9980000010</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>HX7</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZBG_LC_LIMIT_MASTER</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZBGLC_MASTERDATA_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <UI_APP_ID>ZBGLCMASTERDATA_UI5R</UI_APP_ID>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZBG_LC_LIMIT_MASTER_SB             0001</REL_NAME>
+      <REL_TYPE>IWSV</REL_TYPE>
+      <APP_ID>ZBGLC_MASTERDATA_EXT</APP_ID>
+      <SRVC_NAME>5E1C883326994D4651F7252FD5D188</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <UIAD_SRC>ZBGLCMASTERDATA_UI5R</UIAD_SRC>
+      <TEXT>Service Biding for BG/LC Limit Master</TEXT>
+      <TYPE_TEXT>OData V2</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+    <RTYPE_MIG_STATUS>3</RTYPE_MIG_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,218 @@
+@Metadata.layer: #PARTNER
+@UI.headerInfo : {
+typeName: 'GSTR2 Report',
+typeNamePlural: 'GSTR2 Report'
+}
+annotate entity ZFI_GSTR2_REPORT
+    with 
+{
+  @UI.lineItem: [{ position: 10 }]
+  @UI.selectionField: [{ position: 50 }]
+  @UI.identification: [{ position: 10 }]
+  @EndUserText.label: 'Invoice No.'
+  AccountingDocument;
+  @UI.lineItem: [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }] 
+  @EndUserText.label: 'Company Code'
+  CompanyCode;
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  @EndUserText.label: 'Fiscal Year'
+  FiscalYear;
+  @UI.lineItem: [{ position: 32 }]
+  @UI.identification: [{ position: 32 }]
+  @EndUserText.label: 'Product'
+  Product;
+  @UI.lineItem: [{ position: 35 }]
+  @UI.identification: [{ position: 35 }]
+  @EndUserText.label: 'Product Description'
+  ProductDescription;
+  @UI.lineItem: [{ position: 40 }]
+  @UI.selectionField: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  @EndUserText.label: 'Business Place'
+  BusinessPlace;
+  @UI.lineItem: [{ position: 41 }]
+  @UI.identification: [{ position: 41 }]
+  @EndUserText.label: 'Business Place Name'
+  bp_name;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  @EndUserText.label: 'Business Place GSTIN'
+  bp_gstin;
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  @EndUserText.label: 'Expense GL Account'
+  expense_gl;
+  @UI.lineItem: [{ position: 70 }]
+  @UI.identification: [{ position: 70 }]
+  @EndUserText.label: 'GL Description'
+  expense_gl_name;
+  @UI.lineItem: [{ position: 80 }]
+  @UI.identification: [{ position: 80 }]
+  @EndUserText.label: 'Invoice Ref number'
+  invoice_ref_no;
+  @UI.lineItem: [{ position: 90 }]
+  @UI.identification: [{ position: 90 }]
+  @EndUserText.label: 'Accounting Document Type'
+  document_type;
+  @UI.lineItem: [{ position: 100 }]
+  @UI.identification: [{ position: 100 }]
+  @EndUserText.label: 'Document Date'
+  DocumentDate;
+  @UI.lineItem: [{ position: 110 }]
+  @UI.selectionField: [{ position: 110 }]
+  @UI.identification: [{ position: 110 }]
+  @EndUserText.label: 'Posting Date'
+  PostingDate;
+  @UI.lineItem: [{ position: 120 }]
+  @UI.selectionField: [{ position: 120 }]
+  @UI.identification: [{ position: 120 }]
+  @EndUserText.label: 'Supplier'
+  Supplier;
+  @UI.lineItem: [{ position: 130 }]
+  @UI.identification: [{ position: 130 }]
+  @EndUserText.label: 'Supplier Name'
+  SupplierFullName;
+  @UI.lineItem: [{ position: 130 }]
+  @UI.identification: [{ position: 130 }]
+  @EndUserText.label: 'Supplier GSTIN'
+  supplier_gstin;
+  @UI.lineItem: [{ position: 140 }]
+  @UI.identification: [{ position: 140 }]
+  @EndUserText.label: 'Supplier City'
+  supplier_city;
+  @UI.lineItem: [{ position: 150 }]
+  @UI.identification: [{ position: 150 }]
+  @EndUserText.label: 'Place of supply'
+  supplier_reg;
+  @UI.lineItem: [{ position: 160 }]
+  @UI.identification: [{ position: 160 }]
+  @EndUserText.label: 'Supply Attract Reverse Charge'
+  supply_attract_rev;
+  @UI.lineItem: [{ position: 165 }]
+  @UI.identification: [{ position: 165 }]
+  @EndUserText.label: 'Purchasing Document'
+  PurchasingDocument;
+  @UI.lineItem: [{ position: 170 }]
+  @UI.identification: [{ position: 170 }]
+  @EndUserText.label: 'Tax Code'
+  TaxCode;
+  @UI.lineItem: [{ position: 180 }]
+  @UI.identification: [{ position: 180 }]
+  @EndUserText.label: 'Tax Code Description'
+  TaxCodeName;
+  @UI.lineItem: [{ position: 190 }]
+  @UI.identification: [{ position: 190 }]
+  @EndUserText.label: 'Taxable Value'
+  taxable_amount;
+  @UI.lineItem: [{ position: 200 }]
+  @UI.identification: [{ position: 200 }]
+  @EndUserText.label: 'IGST Rate'
+  igst_rate;
+  @UI.lineItem: [{ position: 210 }]
+  @UI.identification: [{ position: 210 }]
+  @EndUserText.label: 'CGST Rate'
+  cgst_rate;
+  @UI.lineItem: [{ position: 220 }]
+  @UI.identification: [{ position: 220 }]
+  @EndUserText.label: 'SGST Rate'
+  sgst_rate;
+  @UI.lineItem: [{ position: 230 }]
+  @UI.identification: [{ position: 230 }]
+  @EndUserText.label: 'UGST Rate'
+  ugst_rate;
+  @UI.lineItem: [{ position: 240 }]
+  @UI.identification: [{ position: 240 }]
+  @EndUserText.label: 'IGST Amount'
+  igst_amount;
+  @UI.lineItem: [{ position: 250 }]
+  @UI.identification: [{ position: 250 }]
+  @EndUserText.label: 'CGST Amount'
+  cgst_amount;
+  @UI.lineItem: [{ position: 260 }]
+  @UI.identification: [{ position: 260 }]
+  @EndUserText.label: 'SGST Amount'
+  sgst_amount;
+  @UI.lineItem: [{ position: 270 }]
+  @UI.identification: [{ position: 270 }]
+  @EndUserText.label: 'UGST Amount'
+  ugst_amount;
+  @UI.lineItem: [{ position: 280 }]
+  @UI.identification: [{ position: 280 }]
+  @EndUserText.label: 'RCM IGST Amount (With ITC)'
+  rcm_igst_with_itc;
+  @UI.lineItem: [{ position: 290 }]
+  @UI.identification: [{ position: 290 }]
+  @EndUserText.label: 'RCM CGST Amount (With ITC)'
+   rcm_cgst_with_itc;
+  @UI.lineItem: [{ position: 300 }]
+  @UI.identification: [{ position: 300 }]
+  @EndUserText.label: 'RCM SGST Amount (With ITC)'
+   rcm_sgst_with_itc;
+  @UI.lineItem: [{ position: 310 }]
+  @UI.identification: [{ position: 310 }]
+  @EndUserText.label: 'RCM UGST Amount (With ITC)'
+   rcm_ugst_with_itc;
+  @UI.lineItem: [{ position: 320 }]
+  @UI.identification: [{ position: 320 }]
+  @EndUserText.label: 'RCM IGST Amount (Without ITC)'
+   rcm_igst_without_itc;
+  @UI.lineItem: [{ position: 330 }]
+  @UI.identification: [{ position: 330 }]
+  @EndUserText.label: 'RCM CGST Amount (Without ITC)'
+   rcm_cgst_without_itc;
+  @UI.lineItem: [{ position: 340 }]
+  @UI.identification: [{ position: 340 }]
+  @EndUserText.label: 'RCM SGST Amount (Without ITC)'
+   rcm_sgst_without_itc;
+  @UI.lineItem: [{ position: 350 }]
+  @UI.identification: [{ position: 350 }]
+  @EndUserText.label: 'RCM UGST Amount (Without ITC)'
+   rcm_ugst_without_itc; 
+//  @UI.lineItem: [{ position: 360 }]
+//  @UI.identification: [{ position: 360 }]
+//  @EndUserText.label: 'IGST No Credit'
+//   igst_no_credit;
+//  @UI.lineItem: [{ position: 370 }]
+//  @UI.identification: [{ position: 370 }]
+//  @EndUserText.label: 'CGST No Credit'
+//   cgst_no_credit;
+//  @UI.lineItem: [{ position: 380 }]
+//  @UI.identification: [{ position: 380 }]
+//  @EndUserText.label: 'SGST No Credit'
+//   sgst_no_credit;
+//  @UI.lineItem: [{ position: 390 }]
+//  @UI.identification: [{ position: 390 }]
+//  @EndUserText.label: 'UGST No Credit'
+//   ugst_no_credit;
+  @UI.lineItem: [{ position: 400 }]
+  @UI.identification: [{ position: 400 }]
+  @EndUserText.label: 'Invoice Value'
+  invoice_value;
+  @UI.lineItem: [{ position: 410 }]
+  @UI.identification: [{ position: 410 }]
+  @EndUserText.label: 'HSN Code'
+  IN_HSNOrSACCode;
+  @UI.lineItem: [{ position: 420 }]
+  @UI.identification: [{ position: 420 }]
+  @EndUserText.label: 'Profit Center'
+  ProfitCenter;
+  @UI.lineItem: [{ position: 430 }]
+  @UI.identification: [{ position: 430 }]
+  @EndUserText.label: 'Profit Center Name'
+  ProfitCenterLongName;
+  @UI.lineItem: [{ position: 440 }]
+  @UI.identification: [{ position: 440 }]
+  @EndUserText.label: 'GSTIN Status'
+  gstin_status; 
+//  @UI.lineItem: [{ position: 450 }]
+//  @UI.identification: [{ position: 450 }]
+//  @EndUserText.label: 'Quantity'
+//  Quantity;
+//  @UI.lineItem: [{ position: 460 }]
+//  @UI.identification: [{ position: 460 }]
+//  @EndUserText.label: 'Unit Of Measurement'
+//  uom;
+}

@@ -1,0 +1,26 @@
+unmanaged implementation in class zbp_fi_outward_rd_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_OUTWARD_RD_CDS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Zlcnumber, ZslNumber;
+
+  mapping for zfi_outward_rd
+  {
+    Zlcnumber              = zlcnumber;
+    ZslNumber              = zsl_number;
+    ZdocumentDescription   = zdocumentdescription;
+
+    CreatedBy              = created_by;
+    CreatedAt              = created_at;
+    LastChangedBy          = last_changed_by;
+    LastChangedAt          = last_changed_at;
+  }
+}

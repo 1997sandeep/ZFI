@@ -1,0 +1,43 @@
+unmanaged implementation in class zbp_fi_outward_lc_cds unique;
+strict ( 2 );
+
+define behavior for ZFI_OUTWARD_LC_CDS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Zlcnumber;
+  mapping for zfi_outward_lc
+  {
+    Zlcnumber       = zlcnumber;
+    CompanyCode     = company_code;
+    JobNo           = job_no;
+    SalesOrder      = sales_order;
+    CustomerCode    = customer_code;
+    CustomerName    = customer_name;
+    Zlcdate         = zlcdate;
+    Zlctype         = zlctype;
+    ZlcIssuingBank  = zlcissuingbank;
+    ZlcNegotiatingBank = zlcnegotiatingbank;
+    ZlastShipmentDate = zlastshipmentdate;
+    ZlsdVersion     = zlsdversion;
+    ZexpiryDate     = zexpirydate;
+    ZedVersion      = zedversion;
+    ZlcPercent      = zlcpercent;
+    OrderAmountBasic = order_amount_basic;
+    GstAmount       = gst_amount;
+    OrderAmountGst  = order_amount_gst;
+    ZlcAmount       = zlcamount;
+    ZlcAmountVersion = zlcamountversion;
+    TdsPercentage   = tds_percentage;
+    ZboeDuePeriod   = zboedueperiod;
+    Zremarks        = zremarks;
+    Zstatus         = zstatus;
+    Zdescrepancies  = zdescrepancies;
+    CurrencyCode    = currency_code;
+  }
+}

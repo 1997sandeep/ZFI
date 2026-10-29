@@ -1,0 +1,4 @@
+@EndUserText.label: 'GSTR1 SD'
+define service ZFI_GSTR1_REPORT_SD {
+  expose ZFI_GSTR1_REPORT1;
+}
